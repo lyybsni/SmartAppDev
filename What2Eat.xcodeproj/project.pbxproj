@@ -13,6 +13,7 @@
 		2923A5BF25BECA0B00A9EBA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2923A5BE25BECA0B00A9EBA0 /* Preview Assets.xcassets */; };
 		2923A5C125BECA0B00A9EBA0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5C025BECA0B00A9EBA0 /* Persistence.swift */; };
 		2923A5C425BECA0B00A9EBA0 /* What2Eat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5C225BECA0B00A9EBA0 /* What2Eat.xcdatamodeld */; };
+		2923A5CD25BED54600A9EBA0 /* BodyWeightMontitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5CC25BED54600A9EBA0 /* BodyWeightMontitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2923A5C025BECA0B00A9EBA0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		2923A5C325BECA0B00A9EBA0 /* What2Eat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = What2Eat.xcdatamodel; sourceTree = "<group>"; };
 		2923A5C525BECA0B00A9EBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2923A5CC25BED54600A9EBA0 /* BodyWeightMontitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightMontitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2923A5B725BECA0800A9EBA0 /* What2EatApp.swift */,
 				2923A5B925BECA0800A9EBA0 /* ContentView.swift */,
+				2923A5CC25BED54600A9EBA0 /* BodyWeightMontitor.swift */,
 				2923A5BB25BECA0B00A9EBA0 /* Assets.xcassets */,
 				2923A5C025BECA0B00A9EBA0 /* Persistence.swift */,
 				2923A5C525BECA0B00A9EBA0 /* Info.plist */,
@@ -148,6 +151,7 @@
 				2923A5C425BECA0B00A9EBA0 /* What2Eat.xcdatamodeld in Sources */,
 				2923A5BA25BECA0800A9EBA0 /* ContentView.swift in Sources */,
 				2923A5B825BECA0800A9EBA0 /* What2EatApp.swift in Sources */,
+				2923A5CD25BED54600A9EBA0 /* BodyWeightMontitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

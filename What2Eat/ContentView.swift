@@ -15,8 +15,11 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+    
 
     var body: some View {
+        Text("If you can see me")
         List {
             ForEach(items) { item in
                 Text("Item at \(item.timestamp!, formatter: itemFormatter)")
@@ -24,14 +27,15 @@ struct ContentView: View {
             .onDelete(perform: deleteItems)
         }
         .toolbar {
-            #if os(iOS)
+            //#if os(iOS)
             EditButton()
-            #endif
+            //#endif
 
             Button(action: addItem) {
                 Label("Add Item", systemImage: "plus")
             }
         }
+        Text(String(items.count))
     }
 
     private func addItem() {
