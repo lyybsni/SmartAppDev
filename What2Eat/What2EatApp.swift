@@ -22,11 +22,7 @@ struct What2EatApp: App {
                         Image(systemName: "1.square.fill")
                         Text("Weight")
                     }
-                Text("Select a Restaurant")
-                    .tabItem {
-                        Image(systemName: "2.square.fill")
-                        Text("Restaurant")
-                    }
+                
                 Text("Record the Storage")
                     .tabItem {
                         Image(systemName: "3.square.fill")
