@@ -14,6 +14,7 @@
 		2923A5C125BECA0B00A9EBA0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5C025BECA0B00A9EBA0 /* Persistence.swift */; };
 		2923A5C425BECA0B00A9EBA0 /* What2Eat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5C225BECA0B00A9EBA0 /* What2Eat.xcdatamodeld */; };
 		2923A5CD25BED54600A9EBA0 /* BodyWeightMontitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5CC25BED54600A9EBA0 /* BodyWeightMontitor.swift */; };
+		2923A5D125C13C5A00A9EBA0 /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2923A5D025C13C5A00A9EBA0 /* RestaurantListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2923A5C325BECA0B00A9EBA0 /* What2Eat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = What2Eat.xcdatamodel; sourceTree = "<group>"; };
 		2923A5C525BECA0B00A9EBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2923A5CC25BED54600A9EBA0 /* BodyWeightMontitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyWeightMontitor.swift; sourceTree = "<group>"; };
+		2923A5D025C13C5A00A9EBA0 /* RestaurantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2923A5C525BECA0B00A9EBA0 /* Info.plist */,
 				2923A5C225BECA0B00A9EBA0 /* What2Eat.xcdatamodeld */,
 				2923A5BD25BECA0B00A9EBA0 /* Preview Content */,
+				2923A5D025C13C5A00A9EBA0 /* RestaurantListView.swift */,
 			);
 			path = What2Eat;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				2923A5C125BECA0B00A9EBA0 /* Persistence.swift in Sources */,
 				2923A5C425BECA0B00A9EBA0 /* What2Eat.xcdatamodeld in Sources */,
 				2923A5BA25BECA0800A9EBA0 /* ContentView.swift in Sources */,
+				2923A5D125C13C5A00A9EBA0 /* RestaurantListView.swift in Sources */,
 				2923A5B825BECA0800A9EBA0 /* What2EatApp.swift in Sources */,
 				2923A5CD25BED54600A9EBA0 /* BodyWeightMontitor.swift in Sources */,
 			);

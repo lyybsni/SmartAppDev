@@ -33,12 +33,19 @@ struct BodyWeightList: View{
         isAddingWeight = !isAddingWeight
     }
     
+    private var weightDateFormatter: DateFormatter
+    init() {
+        weightDateFormatter = DateFormatter()
+        weightDateFormatter.dateFormat = "YY-MM-DD HH:MM"
+    }
+    
     var body: some View {
         NavigationView{
             List(weightList){ record in
                 HStack{
-                    Text("\(record.date)")
-                    Text("\(record.weight)")
+                    Text("\(record.date, formatter: weightDateFormatter)")
+                    Spacer()
+                    Text("\(record.weight, specifier: "%.1f")")
                 }
             }
             .navigationBarTitle("WeightRecord")
@@ -50,7 +57,7 @@ struct BodyWeightList: View{
            HStack{
                Button("Cancel", action: toggleAddingRecord)
                Spacer()
-               Text("Your weight: \(enteredWeight)")
+               Text("Your weight: \(enteredWeight, specifier: "%.1f")")
                Spacer()
                 Button("Submit", action: {
                     addRecord(date: Date(), weight: enteredWeight)
@@ -68,7 +75,10 @@ struct BodyWeightList: View{
     func addRecord(date: Date, weight: Double){
         weightList.append(BodyWeight(id: weightList.count, date: date, weight: weight))
         self.data.weight = weight
+        
+        #if DEBUG
         print("Sub", self.data.weight, self.data.height)
+        #endif
     }
     
 }
@@ -97,7 +107,11 @@ struct BodyWeightMonitorView: View{
     }
     
     func computeBMI() -> Double{
+        
+        #if DEBUG
         print("Main", self.data.weight, self.data.height)
+        #endif
+        
         return (self.data.weight)*10000/Double(self.data.height*self.data.height)
     }
     
@@ -120,9 +134,9 @@ struct BodyWeightMonitorView: View{
                 Button("\(tempHeight+100)", action: toggleSelectHeight)
             }
             
-            ScrollView{
-                Text("Your BMI is \(computeBMI())")
-            }.frame(minHeight: 300)
+            //ScrollView{
+            Text("Your BMI is \(computeBMI(), specifier: "%.3f")")
+            //}.frame(minHeight: 300)
             
             Divider()
             
